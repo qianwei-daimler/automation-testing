@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+app:
+  name: ATP
+  login:
+    token: c8429d41-28cd-4818-bb13-5d14ff324de2
+
+automation:
+  api:
+    ap:
+     url: http://localhost:8082/
+

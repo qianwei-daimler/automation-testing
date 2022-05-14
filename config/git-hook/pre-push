@@ -1,0 +1,8 @@
+#!/bin/sh
+set -x
+
+mvn checkstyle:checkstyle; checkstyleStatus=$?
+mvn clean spotbugs:check; spotbugsStatus=$?
+
+test $checkstyleStatus != 0 && exit $checkstyleStatus
+exit $spotbugsStatus
